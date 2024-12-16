@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.css'
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { TiThSmall } from "react-icons/ti";
 const Navbar = () => {
   return (
     <section className='navbarSection'>
@@ -39,8 +40,11 @@ const Navbar = () => {
                     </button>
                 </ul>
                 <div className='closeNavbar'>
-                <AiFillCloseCircle />
+                    <AiFillCloseCircle className='icon'/>
                 </div>
+            </div>
+            <div className='toggleNavbar'>
+                <TiThSmall className='icon'/>
             </div>
         </header>
     </section>
