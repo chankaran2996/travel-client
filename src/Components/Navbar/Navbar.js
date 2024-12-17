@@ -14,25 +14,25 @@ const Navbar = () => {
             </div>
             <div className='navBar'>
                 <ul className='navLists flex'>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>Home</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>Packages</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>Shop</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>About</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>Pages</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>News</a>
                     </li>
-                    <li className='navitems'>
+                    <li className='navItem'>
                         <a href='#' className='navLink'>Contact</a>
                     </li>
                     <button className='btn'>
@@ -51,4 +51,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
