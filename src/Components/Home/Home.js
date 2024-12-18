@@ -1,12 +1,48 @@
 import React from 'react'
 import './home.css'
 import viedo from '../../Assets/video.mp4'
+import { GrLocation } from "react-icons/gr";
 
 const Home = () => {
   return (
     <section className='home'>
       <div className='overlay'></div>
       <video src={viedo} muted autoPlay loop type='viedo/mp4'></video>
+      <div className='homeContent container'>
+        <div className='textDiv'>
+          <span className='smallText'>
+            Our Packages
+          </span>
+
+          <h1 className='homeTitle'>
+            Search your Holidays
+          </h1>
+
+        </div>
+
+        <div className='cardDiv grid'>
+          <div className='destinationInput'>
+            <label htmlFor='city'>Search your destination</label>
+            <div className='input flex'>
+              <input type='text' placeholder='Enter city here....'/>
+              <GrLocation className='icon'/>
+            </div>
+          </div>
+
+          <div className='dateInput'>
+            <label htmlFor='date'>Select your date:</label>
+            <div className='input flex'>
+              <input type='date'/>
+            </div>
+          </div>
+
+          <div className='destinationInput'>
+
+          </div>
+        </div>
+
+        
+      </div>
     </section>
   )
 }
