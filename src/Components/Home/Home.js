@@ -2,6 +2,11 @@ import React from 'react'
 import './home.css'
 import viedo from '../../Assets/video.mp4'
 import { GrLocation } from "react-icons/gr";
+import { HiFilter } from "react-icons/hi";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram ,FaTripadvisor} from "react-icons/fa";
+import { BsListTask } from "react-icons/bs";
+import{TbApps} from "react-icons/tb"
 
 const Home = () => {
   return (
@@ -36,11 +41,35 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='destinationInput'>
+          <div className='priceInput'>
+            <div className='lableTotal flex'>
+            <label htmlFor='price'>Max price:</label>
+            <h3 className='total'>₹5000</h3>
+            </div>
+            
+            <div className='input flex'>
+              <input type='range' max={5000} min={1000}/>
+            </div>
+          </div>
 
+          <div className='seachOptions flex'>
+            <HiFilter className='icon'/>
+            <span>MORE FILTER</span>
           </div>
         </div>
 
+        <div className='homeFooterIcons flex'>
+          <div className='rightIcons'>
+            <FiFacebook className='icon'/>
+            <FaInstagram className='icon'/>
+            <FaTripadvisor className='icon'/>
+          </div>
+
+          <div className='leftIcons'>
+            <BsListTask className='icon'/>
+            <TbApps className='icon'/>
+          </div>
+        </div>
         
       </div>
     </section>
