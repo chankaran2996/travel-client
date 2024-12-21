@@ -1,87 +1,89 @@
 import React from 'react'
 import './main.css'
+import img1 from'../../Assets/img1.jpg'
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const data = [
   {
     id:1,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:2,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:3,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:4,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:5,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:6,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:7,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:8,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   },
   {
     id:9,
-    imgUrl:"img",
+    imgUrl:img1,
     destTitle: "Bora Bora",
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: ""
+    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
   }
 ]
 
@@ -96,7 +98,38 @@ const Main = () => {
       </div>
 
       <div className='secContent grid'>
+        {
+          data.map((data)=>{
+            return(
+              <div key={data.id} className='singleDestination'>
+                <div className='imgeDiv'>
+                  <img src={data.imgUrl} alt=''/>
+                </div>
 
+                <div className='cardInfo'>
+                  <h4 className='destTitle'>{data.destTitle}</h4>
+                  <span className='continent flex'>
+                    <HiOutlineLocationMarker className='icon'/>
+                    <span className='name'>{data.loaction}</span>
+                  </span>
+
+                  <div className='fees flex'>
+                    <div className='grade'>
+                      <span>{data.grade}<small>+1</small></span>
+                    </div>
+                    <div className='price'>
+                      <h5>{data.fees}</h5>
+                    </div>
+                  </div>
+
+                  <div className='desc'>
+                    <p>{data.description}</p>
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     </section>
   )
