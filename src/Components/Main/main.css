@@ -10,145 +10,126 @@
   --greyText:rgb(190, 190, 190);
   --inputColor:rgb(239, 239, 239);
   --bodyColor:rgb(240, 240, 246);
-  --cardBG:rbg(225, 225, 235);
+  --cardBG:rgb(225, 225, 235);
+  --cardHover:rgb(255, 255, 255);
 }
 
-.home {
+.main {
   width: 100%;
+}
+.main .secTitle .title {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-.home .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgb(47, 106, 127);
-  top: 0;
-  z-index: 1;
-  mix-blend-mode: hard-light;
-}
-.home video {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.home .homeContent {
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 8rem 1.5rem 3rem;
-  display: flex;
-  row-gap: 3rem;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  margin: auto;
-  color: var(--whiteColor);
-  z-index: 100;
-}
-.home .homeContent .textDiv {
-  padding: 2rem 0;
-}
-.home .homeContent .textDiv .smallText {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-.home .homeContent .textDiv .homeTitle {
-  position: relative;
-  font-size: 1.8rem;
-}
-.home .homeContent .cardDiv {
-  position: relative;
-  padding: 2rem 1rem;
-  background: var(--whiteColor);
-  border-radius: 10px;
-  gap: 1rem;
-}
-.home .homeContent .cardDiv label {
-  display: block;
-  color: var(--textColor);
-  padding-bottom: 10px;
-  font-size: 13px;
-  font-weight: 500;
-}
-.home .homeContent .cardDiv .lableTotal {
-  justify-content: space-between;
-  align-items: center;
-}
-.home .homeContent .cardDiv .lableTotal .total {
-  color: var(--textColor);
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-.home .homeContent .cardDiv .input {
-  height: 40px;
-  padding: 0 1rem;
-  background: var(--inputColor);
-  border-radius: 3rem;
-}
-.home .homeContent .cardDiv .input input {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 13px;
-  font-weight: 500;
-}
-.home .homeContent .cardDiv .input input::-moz-placeholder {
-  font-size: 13px;
-}
-.home .homeContent .cardDiv .input input::placeholder {
-  font-size: 13px;
-}
-.home .homeContent .cardDiv .input .icon {
-  font-size: 10px;
-  color: var(--PrimaryColor) !important;
-  margin-left: 10px;
-}
-.home .homeContent .cardDiv .input .input[type=range] {
-  background: blue;
-}
-.home .homeContent .cardDiv .seachOptions {
-  position: absolute;
-  background: var(--gradientColor);
   width: -moz-max-content;
   width: max-content;
-  bottom: -0.7rem;
-  -moz-column-gap: 0.8rem;
-       column-gap: 0.8rem;
-  padding: 5px 1rem;
-  border-radius: 3rem;
-  left: 50%;
-  transform: translate(-50%);
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .secTitle .title::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .secContent {
   justify-content: center;
-  cursor: pointer;
+  gap: 1.5rem;
 }
-.home .homeContent .cardDiv .seachOptions:hover {
-  background: var(--PrimaryColor);
+.main .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
 }
-.home .homeContent .cardDiv .seachOptions .icon {
+.main .secContent .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .secContent .singleDestination .imgeDiv {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .secContent .singleDestination .imgeDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .secContent .singleDestination .imgeDiv:hover img {
+  transform: scale(1.1);
+}
+.main .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.main .secContent .singleDestination .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .secContent .singleDestination .cardInfo .cntonent {
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .cntonent .icon {
+  color: var(--textColor);
   font-size: 18px;
 }
-.home .homeContent .cardDiv .seachOptions spam {
-  font-size: 13px;
+.main .secContent .singleDestination .cardInfo .cntonent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
 }
-.home .homeContent .homeFooterIcons {
+.main .secContent .singleDestination .cardInfo .fees {
   width: 100%;
   justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
 }
-.home .homeContent .homeFooterIcons .icon {
-  font-size: 20px;
-  margin: 0 5px;
+.main .secContent .singleDestination .cardInfo .fees .grade {
+  color: var(--textColor);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .secContent .singleDestination .cardInfo .fees .grade small {
+  text-align: center;
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.main .secContent .singleDestination .cardInfo .fees .price {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+.main .secContent .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.main .secContent .singleDestination .cardInfo .btn {
+  margin-top: 1rem;
   color: var(--whiteColor);
   font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
-.home .homeContent .homeFooterIcons .icon:hover {
-  color: var(--PrimaryColor);
+.main .secContent .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

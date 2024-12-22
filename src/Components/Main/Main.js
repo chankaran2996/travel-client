@@ -1,7 +1,7 @@
 import React from 'react'
 import './main.css'
 import img1 from'../../Assets/img1.jpg'
-import { HiOutlineLocationMarker } from "react-icons/hi";
+import { HiOutlineLocationMarker ,HiOutlineClipboardCheck} from "react-icons/hi";
 
 const data = [
   {
@@ -125,6 +125,10 @@ const Main = () => {
                   <div className='desc'>
                     <p>{data.description}</p>
                   </div>
+
+                  <button className='btn flex'>
+                    DETAILS<HiOutlineClipboardCheck className='icon'/>
+                  </button>
                 </div>
               </div>
             )
