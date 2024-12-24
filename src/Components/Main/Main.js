@@ -11,7 +11,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:2,
@@ -20,7 +20,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:3,
@@ -29,7 +29,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:4,
@@ -38,7 +38,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitaef"
   },
   {
     id:5,
@@ -47,7 +47,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:6,
@@ -56,7 +56,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:7,
@@ -65,7 +65,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:8,
@@ -74,7 +74,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   },
   {
     id:9,
@@ -83,7 +83,7 @@ const data = [
     loaction: "New Zealand",
     grade:"CULTURAL RELAX",
     fees:"₹700",
-    description: "eUUUEWFY  YEQUFIUFWEI F UY wuf et y  yet urtuejd7stuy 7retwufyuet67wt rt6e76truewf7w8ttr8wetfr6tef"
+    description: "vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae"
   }
 ]
 
