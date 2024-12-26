@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './main.css'
 import img1 from'../../Assets/img1.jpg'
 import { HiOutlineLocationMarker ,HiOutlineClipboardCheck} from "react-icons/hi";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
