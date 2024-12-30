@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './home.css'
 import viedo from '../../Assets/video.mp4'
 import { GrLocation } from "react-icons/gr";
@@ -7,19 +7,27 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram ,FaTripadvisor} from "react-icons/fa";
 import { BsListTask } from "react-icons/bs";
 import{TbApps} from "react-icons/tb"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect({
+    AOS.init({duration:2000})
+    // AOS.init();
+    // AOS.refresh();
+  },[])
+
   return (
     <section className='home'>
       <div className='overlay'></div>
       <video src={viedo} muted autoPlay loop type='viedo/mp4'></video>
       <div className='homeContent container'>
         <div className='textDiv'>
-          <span className='smallText'>
+          <span data-aos="fade-up" className='smallText'>
             Our Packages
           </span>
 
-          <h1 className='homeTitle'>
+          <h1 data-aos="fade-up" className='homeTitle'>
             Search your Holidays
           </h1>
 
