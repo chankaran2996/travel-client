@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import './main.css'
 import img1 from'../../Assets/img1.jpg'
 import { HiOutlineLocationMarker ,HiOutlineClipboardCheck} from "react-icons/hi";
-import Aos from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const data = [
@@ -90,11 +90,13 @@ const data = [
 ]
 
 const Main = () => {
+  AOS.init({duration:2000})
+
   return (
     <section className='main container section'>
 
       <div className='secTitle'>
-        <h3 className='title'>
+        <h3 data-aos="fade-right" className='title'>
           Most visited destination
         </h3>
       </div>
@@ -103,7 +105,7 @@ const Main = () => {
         {
           data.map((data)=>{
             return(
-              <div key={data.id} className='singleDestination'>
+              <div key={data.id} data-aos="fade-up" className='singleDestination'>
                 <div className='imgeDiv'>
                   <img src={data.imgUrl} alt=''/>
                 </div>

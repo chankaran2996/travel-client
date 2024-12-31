@@ -11,11 +11,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {
-  useEffect({
-    AOS.init({duration:2000})
-    // AOS.init();
-    // AOS.refresh();
-  },[])
+  // useEffect({
+    // AOS.init({duration:2000})
+    AOS.init({duration:2000});
+  //   AOS.refresh();
+  // },[])
 
   return (
     <section className='home'>
@@ -33,7 +33,7 @@ const Home = () => {
 
         </div>
 
-        <div className='cardDiv grid'>
+        <div data-aos="fade-up" className='cardDiv grid'>
           <div className='destinationInput'>
             <label htmlFor='city'>Search your destination</label>
             <div className='input flex'>
@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='homeFooterIcons flex'>
+        <div data-aos="fade-up" className='homeFooterIcons flex'>
           <div className='rightIcons'>
             <FiFacebook className='icon'/>
             <FaInstagram className='icon'/>
